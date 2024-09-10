@@ -1,0 +1,95 @@
+:root {
+    --primary-bg-color: #ff8c00; 
+    --accent-color: #434343; 
+    --text-color: #1e1e1e; 
+    --secondary-color: #666666; 
+    --background-color: #dad9d9; 
+    }
+
+/* Style for the navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--primary-bg-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+/* Logo (Your name) styling */
+.navbar-logo {
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Unordered list for the links */
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+/* Links styling with ::before and ::after */
+.navbar-links li a {
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+/* The ::before and ::after pseudo-elements for the underline effect */
+.navbar-links li a::before,
+.navbar-links li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+    width: 0;
+    left: 0;
+}
+
+.navbar-links li a::before {
+    top: 0;
+}
+
+.navbar-links li a::after {
+    bottom: 0;
+}
+
+/* When hovered, both lines appear and grow */
+.navbar-links li a:hover::before,
+.navbar-links li a:hover::after {
+    width: 100%;
+}
+
+.navbar-links li a:hover {
+    color: var(--accent-color); /* Accent color applied here */
+    font-weight: 700;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

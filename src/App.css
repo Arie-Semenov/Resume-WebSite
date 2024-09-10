@@ -1,0 +1,12 @@
+:root {
+    --primary-bg-color: #ff8c00; 
+    --accent-color: #434343; 
+    --text-color: #1e1e1e; 
+    --secondary-color: #666666; 
+    --background-color: #dad9d9; 
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}

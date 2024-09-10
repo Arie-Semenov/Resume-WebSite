@@ -3,9 +3,9 @@ import { useState } from 'react'
 export default function Skills(props){
     return(
 
-        <div className="skills">
+        <section className="skills">
             Skills
-        </div>
+        </section>
 
     );
 }

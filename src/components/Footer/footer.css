@@ -1,0 +1,53 @@
+:root {
+    --primary-bg-color: #ff8c00; 
+    --accent-color: #434343; 
+    --text-color: #1e1e1e; 
+    --secondary-color: #666666; 
+    --background-color: #dad9d9; 
+    }
+
+/* Style for the footer container */
+footer {
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling for footer content */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for social media links */
+.social-links {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Styling for copyright notice */
+.footer-content p {
+    margin: 0;
+}

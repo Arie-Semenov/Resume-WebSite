@@ -3,9 +3,9 @@ import { useState } from 'react'
 export default function Hero(props){
     return(
 
-        <div className="hero">
+        <section className="hero">
             Hero
-        </div>
+        </section>
 
     );
 }
