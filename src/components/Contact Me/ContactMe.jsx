@@ -3,7 +3,7 @@ import { useState } from 'react'
 export default function ContactMe(props){
     return(
 
-        <section className="contactMe">
+        <section className="contactMe" id='contact'>
             ContactMe
         </section>
 

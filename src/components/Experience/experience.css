@@ -1,0 +1,90 @@
+:root {
+    --primary-bg-color: #ff8c00;      /* Vibrant orange */
+    --accent-color: #434343;          /* Dark gray */
+    --text-color: #1e1e1e;            /* Darker gray */
+    --secondary-color: #666666;       /* Medium gray */
+    --background-color: #dad9d9;      /* Light gray */
+
+    --section-bg-color-1: #ffdab9;    /* Soft peach puff */
+    --image-border-color: #ffb07c;    /* Light peach for image borders */
+    --image-hover-border-color: #ff8c00; /* Darker peach for image hover */
+}
+
+.experience {
+    background-color: var(--section-bg-color-1);
+    padding: 60px 20px;
+    color: var(--text-color);
+    text-align: center; /* Center align content */
+}
+
+.shop-app, .delivery-app {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--primary-bg-color);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.shop-app img, .delivery-app img {
+    width: 60%;
+    max-width: 1000px; /* Increased width for shop and deliveryHome */
+    border: 3px solid var(--image-border-color);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.delivery-app img {
+    width: 45%;
+}
+
+.image-container-del {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+#delivery-home{
+    width: 1200px;
+}
+
+#shop {
+    width: 1000px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .shop-app img, .delivery-app img {
+        max-width: 100%;
+    }
+
+    .delivery-add {
+        max-width: 100%;
+        max-height: auto; /* Ensure height adjusts accordingly */
+    }
+}

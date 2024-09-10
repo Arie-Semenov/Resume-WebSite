@@ -1,0 +1,92 @@
+:root {
+    --primary-bg-color: #ff8c00;      /* Vibrant orange */
+    --accent-color: #434343;          /* Dark gray */
+    --text-color: #1e1e1e;            /* Darker gray */
+    --secondary-color: #666666;       /* Medium gray */
+    --background-color: #dad9d9;      /* Light gray */
+
+    --section-bg-color-1: #ffdab9;    /* Soft peach puff */
+    --section-bg-color-2: #ffc18a;    /* Bright golden yellow */
+}
+
+/* Section container styling */
+.aboutMe {
+    padding: 60px 20px;
+    background-color: var(--section-bg-color-1);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Space between image and content */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    text-align: left;
+}
+
+.aboutMe h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    text-align: center;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; /* Space for underline */
+}
+
+.aboutMe h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 100%;
+    height: 4px;
+    background: var(--primary-bg-color);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.aboutMe h2:hover::after {
+    width: 100%;
+}
+
+/* Profile image styling */
+.aboutMe img {
+    max-width: 285px; /* Adjust size of the profile picture */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+/* Content styling */
+.aboutMe-content {
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+/* Paragraphs styling */
+.aboutMe-content p {
+    font-size: 22.5px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Additional media query for responsiveness */
+@media (max-width: 768px) {
+    .aboutMe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutMe h2 {
+        font-size: 28px;
+    }
+
+    .aboutMe-content {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .aboutMe img {
+        max-width: 150px; /* Adjust size for smaller screens */
+    }
+}

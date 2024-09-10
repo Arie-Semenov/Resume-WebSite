@@ -13,11 +13,13 @@ function App() {
   return (
     <>
       <NavBar />
-      <AboutMe />
-      <Hero />
-      <Skills />
-      <Experience />
-      <ContactMe />
+      <main>
+        <AboutMe />
+        {/*<Hero />*/}
+        <Skills />
+        <Experience />
+        <ContactMe />
+      </main>
       <Footer />
     </>
   )

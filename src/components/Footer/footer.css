@@ -10,24 +10,29 @@
 footer {
     background-color: var(--primary-bg-color);
     color: var(--text-color);
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 1000; 
 }
 
 /* Styling for footer content */
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Styling for social media links */
 .social-links {
     list-style-type: none;
-    margin: 10px 0;
     padding: 0;
 }
 
