@@ -1,10 +1,10 @@
 :root {
-    --primary-bg-color: #ff8c00; 
-    --accent-color: #434343; 
-    --text-color: #1e1e1e; 
-    --secondary-color: #666666; 
-    --background-color: #dad9d9; 
-    }
+    --primary-bg-color: #ff8c00;
+    --accent-color: #434343;
+    --text-color: #1e1e1e;
+    --secondary-color: #666666;
+    --background-color: #dad9d9;
+}
 
 /* Style for the navbar container */
 .navbar {
@@ -30,6 +30,16 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Toggle button styling */
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
 /* Unordered list for the links */
 .navbar-links {
     list-style-type: none;
@@ -37,6 +47,7 @@
     padding: 0;
     display: flex;
     gap: 30px;
+    transition: max-height 0.3s ease;
 }
 
 /* Links styling with ::before and ::after */
@@ -81,15 +92,40 @@
     font-weight: 700;
 }
 
+/* Navbar links open/close */
+.navbar-links.open {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Responsive design for mobile */
 @media (max-width: 768px) {
     .navbar {
+        position: fixd;
         flex-direction: column;
         align-items: flex-start;
+        width: 100vw;
+    }
+
+    .navbar-toggle {
+        display: inline-block;
+        position: absolute;
+        top: -20px;
+        right: 0;
+        font-size: 3em;
     }
 
     .navbar-links {
+        display: none;
         flex-direction: column;
-        gap: 10px;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navbar-links.open {
+        display: flex;
+        margin-top: 1em;
+        max-height: 500px; /* Adjust as needed */
     }
 }
