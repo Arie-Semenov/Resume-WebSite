@@ -56,3 +56,27 @@ footer {
 .footer-content p {
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px; /* Increase padding if needed for more spacing */
+    }
+
+    .footer-content {
+        flex-direction: row; /* Ensure the content stays in a row */
+        justify-content: center; /* Center-align items in the row */
+    }
+
+    .social-links {
+        display: flex; /* Ensure the social links stay in a row */
+        justify-content: center; /* Center-align social links */
+    }
+
+    .social-links li {
+        margin: 0 8px; /* Adjust spacing between social links */
+    }
+
+    .social-links li a {
+        font-size: 14px; /* Slightly smaller font size for better fit */
+    }
+}
