@@ -37,3 +37,9 @@ main {
     box-sizing: border-box;
     margin-top: 2.8rem;
 }
+
+@media(max-width:789px) {
+    body{
+        width: 100vw;
+    }
+}

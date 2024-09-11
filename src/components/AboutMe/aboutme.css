@@ -72,11 +72,12 @@
     margin-bottom: 20px;
 }
 
-/* Additional media query for responsiveness */
 @media (max-width: 768px) {
     .aboutMe {
         flex-direction: column;
         align-items: center;
+        padding: 40px 10px; /* Adjust padding for smaller screens */
+        height: auto; /* Allow height to adjust with content */
     }
 
     .aboutMe h2 {
@@ -92,3 +93,22 @@
         max-width: 150px; /* Adjust size for smaller screens */
     }
 }
+
+@media (max-width: 480px) {
+    .aboutMe {
+        padding: 20px 10px; /* Further adjust padding for very small screens */
+    }
+
+    .aboutMe h2 {
+        font-size: 24px;
+    }
+
+    .aboutMe-content {
+        font-size: 14px;
+    }
+
+    .aboutMe img {
+        max-width: 120px; /* Further reduce image size for very small screens */
+    }
+}
+
