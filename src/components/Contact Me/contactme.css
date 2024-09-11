@@ -1,0 +1,110 @@
+:root {
+    --primary-bg-color: #ff8c00;      /* Vibrant orange */
+    --accent-color: #434343;          /* Dark gray */
+    --text-color: #1e1e1e;            /* Darker gray */
+    --secondary-color: #666666;       /* Medium gray */
+    --background-color: #dad9d9;      /* Light gray */
+    --section-bg-color: #ffc18a;      /* Soft peach for section background */
+    --input-border-color: #ccc;       /* Light gray for input borders */
+    --button-hover-bg: #ff6a00;       /* Darker orange for button hover */
+}
+
+.contactMe {
+    background-color: var(--section-bg-color);
+    padding: 60px 20px;
+    color: var(--text-color);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMe-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--primary-bg-color);
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+}
+
+.contactMe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: var(--accent-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-bg-color);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background-color: var(--primary-bg-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contactMe-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

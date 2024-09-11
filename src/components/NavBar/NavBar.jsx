@@ -6,7 +6,7 @@ export default function NavBar(props){
         <nav className="navbar">
             <h1 className="navbar-logo">Arie Semenov</h1>
             <ul className="navbar-links">
-                {/*<li><a href="#hero">Home</a></li>*/}
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>

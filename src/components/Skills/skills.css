@@ -12,14 +12,15 @@
 
 .skills {
     background-color: var(--section-bg-color-2);
-    padding: 60px 20px;
+    padding: 90px 20px;
     color: var(--text-color);
     text-align: center;
+    height: 100vh;
 }
 
 .skills h2 {
     font-size: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: var(--primary-bg-color);
 }
 

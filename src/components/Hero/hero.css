@@ -1,0 +1,71 @@
+:root {
+    --section-bg-color-2: #ffc18a;    /* Soft peach for section background */
+    --hero-text-color: #fff;          /* White text color for contrast */
+    --hero-heading-color: #fff;       /* White color for heading */
+    --hero-paragraph-color: #f8f8f8;  /* Light gray for paragraph text */
+    --hero-button-bg-color: #ff8c00;  /* Vibrant orange for button background */
+    --hero-button-hover-bg-color: #e07b00; /* Darker orange for button hover */
+}
+
+.hero {
+    background-color: var(--section-bg-color-2);
+    color: var(--hero-text-color);
+    padding: 100px 20px; /* Adjusted padding for better spacing */
+    text-align: center;
+    background-image: url('../images/hero-bg.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--hero-heading-color);
+    font-weight: 700; /* Bold heading */
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--hero-paragraph-color);
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: var(--hero-button-bg-color);
+    color: var(--hero-text-color);
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: var(--hero-button-hover-bg-color);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
