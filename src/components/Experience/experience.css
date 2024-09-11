@@ -69,22 +69,69 @@ p {
     width: 1000px;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
+    .experience {
+        padding: 40px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .shop-app, .delivery-app {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
     h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .shop-app img, .delivery-app img {
-        max-width: 100%;
+        width: 80%; /* Adjust image width for smaller screens */
+        border: 2px solid var(--image-border-color);
     }
 
-    .delivery-add {
-        max-width: 100%;
-        max-height: auto; /* Ensure height adjusts accordingly */
+    .delivery-app img {
+        width: 60%;
+    }
+
+    .image-container-del {
+        flex-direction: column;
+    }
+
+    #delivery-home, #shop {
+        width: 100%; /* Ensure full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        padding: 20px 10px; /* Further adjust padding for very small screens */
+    }
+
+    .shop-app, .delivery-app {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .shop-app img, .delivery-app img {
+        width: 100%; /* Ensure images fit on very small screens */
+    }
+
+    .delivery-app img {
+        width: 100%;
+    }
+
+    .image-container-del {
+        flex-direction: column;
     }
 }
